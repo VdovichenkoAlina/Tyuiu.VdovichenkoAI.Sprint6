@@ -33,7 +33,7 @@ namespace Tyuiu.VdovichenkoAI.Sprint6.Task6.V27
             formAbout.ShowDialog();
         }
 
-        private void buttonOpenFile_VAI_Click(object sender, EventArgs e)
+        private void buttonOpenFileTask6_VAI_Click(object sender, EventArgs e)
         {
             openFileDialogTask6_VAI.ShowDialog();
             openFilePath = openFileDialogTask6_VAI.FileName;

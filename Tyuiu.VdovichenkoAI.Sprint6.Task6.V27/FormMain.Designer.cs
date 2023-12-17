@@ -34,7 +34,6 @@ namespace Tyuiu.VdovichenkoAI.Sprint6.Task6.V27
             this.panelInfo_VAI = new System.Windows.Forms.Panel();
             this.buttonInfo_VAI = new System.Windows.Forms.Button();
             this.buttonDone_VAI = new System.Windows.Forms.Button();
-            this.buttonOpenFile_VAI = new System.Windows.Forms.Button();
             this.panelTask6_VAI = new System.Windows.Forms.Panel();
             this.groupBoxTask6_VAI = new System.Windows.Forms.GroupBox();
             this.textBoxTask6_VAI = new System.Windows.Forms.TextBox();
@@ -46,6 +45,7 @@ namespace Tyuiu.VdovichenkoAI.Sprint6.Task6.V27
             this.textBoxOutPut_VAI = new System.Windows.Forms.TextBox();
             this.openFileDialogTask6_VAI = new System.Windows.Forms.OpenFileDialog();
             this.toolTipTask6_VAI = new System.Windows.Forms.ToolTip(this.components);
+            this.buttonOpenFileTask6_VAI = new System.Windows.Forms.Button();
             this.panelInfo_VAI.SuspendLayout();
             this.panelTask6_VAI.SuspendLayout();
             this.groupBoxTask6_VAI.SuspendLayout();
@@ -57,9 +57,9 @@ namespace Tyuiu.VdovichenkoAI.Sprint6.Task6.V27
             // 
             // panelInfo_VAI
             // 
+            this.panelInfo_VAI.Controls.Add(this.buttonOpenFileTask6_VAI);
             this.panelInfo_VAI.Controls.Add(this.buttonInfo_VAI);
             this.panelInfo_VAI.Controls.Add(this.buttonDone_VAI);
-            this.panelInfo_VAI.Controls.Add(this.buttonOpenFile_VAI);
             this.panelInfo_VAI.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelInfo_VAI.Location = new System.Drawing.Point(0, 0);
             this.panelInfo_VAI.Name = "panelInfo_VAI";
@@ -88,16 +88,6 @@ namespace Tyuiu.VdovichenkoAI.Sprint6.Task6.V27
             this.toolTipTask6_VAI.SetToolTip(this.buttonDone_VAI, "Выводит слова в которых встречается Н в результирующую строку.");
             this.buttonDone_VAI.UseVisualStyleBackColor = true;
             this.buttonDone_VAI.Click += new System.EventHandler(this.buttonDone_VAI_Click);
-            // 
-            // buttonOpenFile_VAI
-            // 
-            this.buttonOpenFile_VAI.Image = global::Tyuiu.VdovichenkoAI.Sprint6.Task6.V27.Properties.Resources.folder_page;
-            this.buttonOpenFile_VAI.Location = new System.Drawing.Point(3, 3);
-            this.buttonOpenFile_VAI.Name = "buttonOpenFile_VAI";
-            this.buttonOpenFile_VAI.Size = new System.Drawing.Size(111, 63);
-            this.buttonOpenFile_VAI.TabIndex = 0;
-            this.toolTipTask6_VAI.SetToolTip(this.buttonOpenFile_VAI, "Открыть файл.\r\nВыберите нужный файл для обработки.\r\n");
-            this.buttonOpenFile_VAI.UseVisualStyleBackColor = true;
             // 
             // panelTask6_VAI
             // 
@@ -186,12 +176,22 @@ namespace Tyuiu.VdovichenkoAI.Sprint6.Task6.V27
             // 
             // openFileDialogTask6_VAI
             // 
-            this.openFileDialogTask6_VAI.FileName = "openFileDialog1";
+            this.openFileDialogTask6_VAI.FileName = "openFileDialogTask6_VAI";
             // 
             // toolTipTask6_VAI
             // 
             this.toolTipTask6_VAI.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipTask6_VAI.ToolTipTitle = "Подсказка";
+            // 
+            // buttonOpenFileTask6_VAI
+            // 
+            this.buttonOpenFileTask6_VAI.Image = global::Tyuiu.VdovichenkoAI.Sprint6.Task6.V27.Properties.Resources.folder_page;
+            this.buttonOpenFileTask6_VAI.Location = new System.Drawing.Point(4, 3);
+            this.buttonOpenFileTask6_VAI.Name = "buttonOpenFileTask6_VAI";
+            this.buttonOpenFileTask6_VAI.Size = new System.Drawing.Size(110, 63);
+            this.buttonOpenFileTask6_VAI.TabIndex = 3;
+            this.buttonOpenFileTask6_VAI.UseVisualStyleBackColor = true;
+            this.buttonOpenFileTask6_VAI.Click += new System.EventHandler(this.buttonOpenFileTask6_VAI_Click);
             // 
             // FormMain_VAI
             // 
@@ -203,6 +203,7 @@ namespace Tyuiu.VdovichenkoAI.Sprint6.Task6.V27
             this.Controls.Add(this.panelTask6_VAI);
             this.Controls.Add(this.panelInfo_VAI);
             this.Name = "FormMain_VAI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 6 | Вариант 27 | Вдовиченко А. И.";
             this.panelInfo_VAI.ResumeLayout(false);
             this.panelTask6_VAI.ResumeLayout(false);
@@ -223,7 +224,6 @@ namespace Tyuiu.VdovichenkoAI.Sprint6.Task6.V27
         private System.Windows.Forms.Panel panelInfo_VAI;
         private System.Windows.Forms.Button buttonInfo_VAI;
         private System.Windows.Forms.Button buttonDone_VAI;
-        private System.Windows.Forms.Button buttonOpenFile_VAI;
         private System.Windows.Forms.Panel panelTask6_VAI;
         private System.Windows.Forms.GroupBox groupBoxTask6_VAI;
         private System.Windows.Forms.TextBox textBoxTask6_VAI;
@@ -235,6 +235,7 @@ namespace Tyuiu.VdovichenkoAI.Sprint6.Task6.V27
         private System.Windows.Forms.TextBox textBoxOutPut_VAI;
         private System.Windows.Forms.ToolTip toolTipTask6_VAI;
         private System.Windows.Forms.OpenFileDialog openFileDialogTask6_VAI;
+        private System.Windows.Forms.Button buttonOpenFileTask6_VAI;
     }
 }
 
